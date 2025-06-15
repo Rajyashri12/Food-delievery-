@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOnlineMeal - Best Food Delivery in India</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logo.png" alt="Logo">
+            MyOnlineMeal
+        </div>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order-tracking">Track Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="login-btn" onclick="openModal()">Login</button>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h1 class="h-primary">Delicious Meals Delivered Fast</h1>
+        <p>Enjoy the best food from your favorite restaurants at your doorstep.</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2 class="h-secondary">Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <img src="img/1.jpg" alt="Food Ordering">
+                <h3>Online Ordering</h3>
+                <p>Order your meals from the comfort of your home and get them delivered hot and fresh.</p>
+            </div>
+            <div class="service-box">
+                <img src="img/2.png" alt="Catering">
+                <h3>Event Catering</h3>
+                <p>Let us take care of your events with custom menus and reliable food service.</p>
+            </div>
+            <div class="service-box">
+                <img src="img/3.png" alt="Bulk Orders">
+                <h3>Bulk Orders</h3>
+                <p>We handle large orders for offices, hostels, and institutions efficiently and affordably.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2 class="h-secondary">Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-card">
+                <img src="img/pizza.jpg" alt="Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>₹299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-card">
+                <img src="img/burger.jpg" alt="Burger">
+                <h3>Veg Burger</h3>
+                <p>₹149</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="menu-card">
+                <img src="img/thali.jpg" alt="Thali">
+                <h3>Indian Thali</h3>
+                <p>₹199</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart-section">
+        <h2 class="h-secondary center">Your Cart</h2>
+        <ul id="cart-list">
+            <li>Cheese Pizza x1 - ₹299</li>
+            <li>Veg Burger x2 - ₹298</li>
+        </ul>
+    </section>
+
+    <!-- Order Tracking -->
+    <section id="order-tracking">
+        <h2 class="h-secondary center">Track Your Order</h2>
+        <div class="tracking-container">
+            <div class="tracking-step">
+                <div class="circle">1</div>
+                <p>Order Placed</p>
+            </div>
+            <div class="tracking-step">
+                <div class="circle">2</div>
+                <p>Preparing</p>
+            </div>
+            <div class="tracking-step">
+                <div class="circle">3</div>
+                <p>Out for Delivery</p>
+            </div>
+            <div class="tracking-step">
+                <div class="circle">4</div>
+                <p>Delivered</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2 class="h-secondary center">What Our Customers Say</h2>
+        <div class="testimonial">
+            “Excellent service and delicious food. I order every weekend!”  
+            <span>- Priya S.</span>
+        </div>
+        <div class="testimonial">
+            “The thali was amazing and delivered right on time.”  
+            <span>- Ankit M.</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="h-secondary center">Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 class="center">Login</h3>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button>Login</button>
+            <p class="center">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+     <footer>
+     <div class="footer-container">
+    <div class="footer-column">
+        <h4>FoodZone</h4>
+        <p>Delivering happiness to your doorstep. Fast, fresh, and delicious meals anytime, anywhere.</p>
+    </div>
+    <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#cart-section">Cart</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>Email: support@foodzone.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: Mumbai, India</p>
+    </div>
+    <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2025 FoodZone. All rights reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
+
+
+
